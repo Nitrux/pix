@@ -1,5 +1,5 @@
 Source: pix
-Section: utils
+Section: kde
 Priority: optional
 Build-Depends: debhelper,
                extra-cmake-modules,
