@@ -34,4 +34,4 @@ Depends: qml-module-org-kde-mauikit,
          ${shlibs:Depends}
 Description: Image gallery manager for Nitrux
  Pix is an image gallery manager made for Maui.
- Pix is a convergent and multiplatform app that works under Android and GNU Linux distros.
+ Pix is works under Android and GNU Linux distros.
