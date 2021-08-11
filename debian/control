@@ -18,7 +18,8 @@ Build-Depends: debhelper,
                qt5-qmake,
                qtbase5-dev (>= 5.5.0~),
                qtdeclarative5-dev,
-               qtquickcontrols2-5-dev
+               qtquickcontrols2-5-dev,
+               qtpositioning5-dev
 Standards-Version: 4.2.1
 Homepage: https://invent.kde.org/maui/pix/
 Vcs-Git: https://invent.kde.org/maui/pix.git
