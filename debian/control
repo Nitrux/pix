@@ -18,22 +18,17 @@ Build-Depends: debhelper,
                qt5-qmake,
                qtbase5-dev (>= 5.5.0~),
                qtdeclarative5-dev,
-               qtquickcontrols2-5-dev,
-               qtwebengine5-dev
+               qtquickcontrols2-5-dev
 Standards-Version: 4.2.1
-Homepage: https://github.com/maui-project/pix
-Vcs-Git: https://anongit.neon.kde.org/mobile/pix
-Vcs-Browser: https://packaging.neon.kde.org/mobile/pix.git
-Maintainer: Neon CI <neon@kde.org>
+Homepage: https://invent.kde.org/maui/pix/
+Vcs-Git: https://invent.kde.org/maui/pix.git
+Vcs-Browser: https://invent.kde.org/maui/pix/
+Maintainer: Uri Herrera <uri_herrera@nxos.org>
 
 Package: pix
 Architecture: any
 Depends: qml-module-org-kde-mauikit,
-         qml-module-org-mauikit-imagetools,
-         qml-module-org-mauikit-filebrowsing,
-         kquickimageeditor,
          qml-module-qt-labs-platform,
-         libexiv2-27,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Image gallery manager for Nitrux

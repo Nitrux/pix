@@ -1,5 +1,11 @@
 pix (0.0.1+2.0.0+git) nitrux; urgency=medium
 
+  * Update package dependencies.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 10 Aug 2021 22:34:00 -0500
+
+pix (0.0.1+2.0.0+git) nitrux; urgency=medium
+
   * Create package.
 
  -- Uri Herrera <uri_herrera@nxos.org>  Tue, 10 Aug 2021 22:34:00 -0500
