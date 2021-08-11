@@ -10,7 +10,6 @@ Build-Depends: debhelper,
                libkf5notifications-dev (>= 5.24.0~),
                libkf5service-dev (>= 5.24.0~),
                libqt5svg5-dev,
-               libqt5webview5-dev,
                mauikit-dev,
                libmauikitfilebrowsing-dev,
                libmauikitimagetools-dev,
@@ -30,8 +29,10 @@ Maintainer: Neon CI <neon@kde.org>
 Package: pix
 Architecture: any
 Depends: qml-module-org-kde-mauikit,
+         qml-module-org-mauikit-imagetools,
+         qml-module-org-mauikit-filebrowsing,
+         kquickimageeditor,
          qml-module-qt-labs-platform,
-         qml-module-qtwebview,
          libexiv2-27,
          ${misc:Depends},
          ${shlibs:Depends}
