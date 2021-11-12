@@ -105,7 +105,7 @@ checkinstall -D -y \
 	--pakdir=../.. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=pix \
-	--requires="libc6,libexiv2-27,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,mauikit \(\>= 2.1.0\),mauikit-filebrowsing \(\>= 2.1.0\),mauikit-imagetools \(\>= 2.1.0\),qml-module-qt-labs-platform,qml-module-qtlocation,qml-module-qtpositioning" \
+	--requires="kquickimageeditor,libc6,libexiv2-27,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,mauikit \(\>= 2.1.0\),mauikit-filebrowsing \(\>= 2.1.0\),mauikit-imagetools \(\>= 2.1.0\),qml-module-qt-labs-platform,qml-module-qtlocation,qml-module-qtpositioning" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
