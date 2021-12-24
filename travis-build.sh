@@ -57,7 +57,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 
 ### Clone repo.
 
-git clone --single-branch --branch v2.1 https://invent.kde.org/maui/pix.git
+git clone --single-branch --branch master https://invent.kde.org/maui/pix.git
 
 rm -rf pix/{android_files,macos_files,windows_files,examples,LICENSES,README.md}
 
@@ -96,7 +96,7 @@ checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
 	--pkgname=pix \
-	--pkgversion=2.1.0 \
+	--pkgversion=2.1.1+git \
 	--pkgarch=amd64 \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
@@ -105,7 +105,7 @@ checkinstall -D -y \
 	--pakdir=../.. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=pix \
-	--requires="kquickimageeditor,libc6,libexiv2-27,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,mauikit \(\>= 2.1.0\),mauikit-filebrowsing \(\>= 2.1.0\),mauikit-imagetools \(\>= 2.1.0\),qml-module-qt-labs-platform,qml-module-qtlocation,qml-module-qtpositioning" \
+	--requires="kquickimageeditor,libc6,libexiv2-27,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 2.1.1+git\),mauikit-filebrowsing-git \(\>= 2.1.1+git\),mauikit-imagetools \(\>= 2.1.0\),qml-module-qt-labs-platform,qml-module-qtlocation,qml-module-qtpositioning" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
