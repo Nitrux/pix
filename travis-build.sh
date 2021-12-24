@@ -46,9 +46,9 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libkf5notifications-dev \
 	libkf5service-dev \
 	libqt5svg5-dev \
-	mauikit \
-	mauikit-filebrowsing \
-	mauikit-imagetools \
+	mauikit-git \
+	mauikit-filebrowsing-git \
+	mauikit-imagetools-git \
 	kquickimageeditor \
 	qtbase5-dev \
 	qtdeclarative5-dev \
