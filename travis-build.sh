@@ -57,7 +57,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 
 ### Clone repo.
 
-git clone --single-branch --branch master https://invent.kde.org/maui/pix.git
+git clone --single-branch --branch v2.1 https://invent.kde.org/maui/pix.git
 
 rm -rf pix/{android_files,macos_files,windows_files,examples,LICENSES,README.md}
 
