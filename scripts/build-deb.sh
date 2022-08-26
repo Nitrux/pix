@@ -31,6 +31,13 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 
 git clone --depth 1 --branch $PIX_BRANCH https://invent.kde.org/maui/pix.git
 
+
+### FIX Pix .desktop launcher
+### See bug https://invent.kde.org/maui/pix/-/issues/26
+
+sed -i 's+MimeType=image/gif;image/avif;image/jpeg;image/png;image/bmp;image/x-eps;image/x-ico;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/tiff;image/x-psd;image/x-webp;image/webp;inode/directory;+MimeType=image/gif;image/avif;image/jpeg;image/png;image/bmp;image/x-eps;image/x-ico;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/tiff;image/x-psd;image/x-webp;image/webp;+g' pix/src/org.kde.pix.desktop
+
+
 ### Compile Source
 
 mkdir -p build && cd build
