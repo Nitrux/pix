@@ -44,7 +44,8 @@ apt -qq -yy install --no-install-recommends \
 	kquickimageeditor \
 	mauikit-filebrowsing-git \
 	mauikit-git \
-	mauikit-imagetools-git
+	mauikit-imagetools-git \
+	qtbase-abi-5-15-8
 
 ### Download Source
 
