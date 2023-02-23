@@ -14,6 +14,30 @@ curl -L https://packagecloud.io/nitrux/testing/gpgkey | apt-key add -;
 
 apt -qq update
 
+### Update GCC #1
+### mauikit-imagetools is compiled against GCC 12.2 and CPP 12.
+
+>> ubuntu-lunar.list printf "%s\n" \
+    '################' \
+    '# Ubuntu Lunar #' \
+    '################' \
+    '' \
+    'deb [arch=amd64] http://archive.ubuntu.com/ubuntu lunar main restricted universe multiverse' \
+    'deb [arch=amd64] http://archive.ubuntu.com/ubuntu lunar-security main restricted universe multiverse' \
+    'deb [arch=amd64] http://archive.ubuntu.com/ubuntu lunar-updates main restricted universe multiverse' \
+    ''
+
+mv ubuntu-lunar.list /etc/apt/sources.list.d/
+
+apt -qq update
+
+apt -qq -yy install --no-install-recommends --only-upgrade \
+	gcc
+
+apt -qq update
+
+### Install Package Build Dependencies #2
+
 ### Install Package Build Dependencies #2
 
 apt -qq -yy install --no-install-recommends \
