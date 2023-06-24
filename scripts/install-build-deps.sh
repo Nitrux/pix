@@ -29,6 +29,7 @@ $APT_COMMAND install -qy --no-install-recommends \
     libkf5notifications-dev \
     libkf5service-dev \
     libqt5svg5-dev \
+    libtesseract-dev \
     libwayland-dev \
     lintian \
     qtbase5-dev \
