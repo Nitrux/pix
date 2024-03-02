@@ -17,10 +17,10 @@ apt -qq update
 ### Install Package Build Dependencies #2
 
 apt -qq -yy install --no-install-recommends \
-	kquickimageeditor \
 	mauikit-filebrowsing-git \
 	mauikit-git \
-	mauikit-imagetools-git
+	mauikit-imagetools-git \
+	qml-module-org-kde-kquickimageeditor
 
 ### Download Source
 
