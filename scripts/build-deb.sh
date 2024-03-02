@@ -14,43 +14,17 @@ curl -L https://packagecloud.io/nitrux/unison/gpgkey | apt-key add -;
 
 apt -qq update
 
-### Update GCC #1
-### mauikit-imagetools is compiled against GCC 12.2 and CPP 12.
-
->> ubuntu-lunar.list printf "%s\n" \
-    '################' \
-    '# Ubuntu Lunar #' \
-    '################' \
-    '' \
-    'deb [arch=amd64] http://archive.ubuntu.com/ubuntu lunar main restricted universe multiverse' \
-    'deb [arch=amd64] http://archive.ubuntu.com/ubuntu lunar-security main restricted universe multiverse' \
-    'deb [arch=amd64] http://archive.ubuntu.com/ubuntu lunar-updates main restricted universe multiverse' \
-    ''
-
-mv ubuntu-lunar.list /etc/apt/sources.list.d/
-
-apt -qq update
-
-apt -qq -yy install --no-install-recommends --only-upgrade \
-	gcc
-
-apt -qq update
-
-### Install Package Build Dependencies #2
-
 ### Install Package Build Dependencies #2
 
 apt -qq -yy install --no-install-recommends \
 	kquickimageeditor \
 	mauikit-filebrowsing-git \
 	mauikit-git \
-	mauikit-imagetools-git \
-	qtbase-abi-5-15-8
+	mauikit-imagetools-git
 
 ### Download Source
 
 git clone --depth 1 --branch $PIX_BRANCH https://invent.kde.org/maui/pix.git
-
 
 ### FIX Pix .desktop launcher
 ### See bug https://invent.kde.org/maui/pix/-/issues/26
@@ -103,7 +77,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=pix \
-	--requires="kquickimageeditor,libc6,libexiv2-27,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 3.0.1+git\),mauikit-filebrowsing-git \(\>= 3.0.1+git\),mauikit-imagetools-git \(\>= 3.0.1+git\),qml-module-qt-labs-platform,qml-module-qtlocation,qml-module-qtpositioning" \
+	--requires="libc6,libexiv2-27,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 3.1.0+git\),mauikit-filebrowsing-git \(\>= 3.1.0+git\),mauikit-imagetools-git \(\>= 3.1.0+git\),qml-module-org-kde-kquickimageeditor,qml-module-qt-labs-platform,qml-module-qtlocation,qml-module-qtpositioning" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
