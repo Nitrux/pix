@@ -76,7 +76,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=pix \
-	--requires="mauikit-filebrowsing-git \(\>= 4.0.1\),mauikit-git \(\>= 4.0.1\),mauikit-imagetools-git \(\>= 4.0.1\),qml6-module-qtlocation" \
+	--requires="mauikit-filebrowsing-git \(\>= 4.0.1\),mauikit-git \(\>= 4.0.1\),mauikit-imagetools-git \(\>= 4.0.1\),qml6-module-qtcore,qml6-module-qtlocation" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
