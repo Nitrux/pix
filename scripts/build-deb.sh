@@ -11,7 +11,7 @@ set -e
 
 # -- Download Source
 
-git clone --depth 1 --branch "$PIX_BRANCH" https://invent.kde.org/maui/maui-pix
+git clone --depth 1 --branch "$PIX_BRANCH" https://github.com/Nitrux/maui-pix.git
 
 
 # -- FIX Pix .desktop launcher
