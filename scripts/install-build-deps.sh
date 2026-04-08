@@ -72,4 +72,4 @@ EOF
 $APT_COMMAND update -q
 $APT_COMMAND install -y - --no-install-recommends \
     mauikit-filebrowsing \
-    mauikit-imagetools \
+    mauikit-imagetools
