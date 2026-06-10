@@ -69,7 +69,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=pix \
-	--requires="kio-extras,libkexiv2qt6-0,mauikit \(\>= 4.0.3\),mauikit-filebrowsing \(\>= 4.0.3\),mauikit-imagetools \(\>= 4.0.3\),qml6-module-qtcore,qml6-module-qtlocation,qml6-module-qtquick-effects" \
+	--requires="kio-extras,libkexiv2qt6-0,mauikit \(\>= 4.0.4\),mauikit-filebrowsing \(\>= 4.0.4\),mauikit-imagetools \(\>= 4.0.4\),qml6-module-qtcore,qml6-module-qtlocation,qml6-module-qtquick-effects" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
