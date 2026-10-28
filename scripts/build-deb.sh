@@ -58,7 +58,7 @@ Priority: optional
 Architecture: ${TARGET_ARCH}
 Maintainer: uri_herrera@nxos.org
 Provides: pix
-Depends: qml6-module-qtquick-controls,qml6-module-qtquick-layouts,qml6-module-qtquick-window,libkf6i18n6,libkf6kiocore6,libqt6concurrent6,libqt6core6t64,libqt6dbus6,libqt6gui6,libqt6positioning6,libqt6qml6,libqt6quick6,kio-extras,libkexiv2qt6-0,mauikit (>= 4.0.4),mauikit-filebrowsing (>= 4.0.4),mauikit-imagetools (>= 4.0.4),qml6-module-qtcore,qml6-module-qtlocation,qml6-module-qtquick-effects
+Depends: qml6-module-qtquick-controls,qml6-module-qtquick-layouts,qml6-module-qtquick-window,libkf6i18n6,libkf6kiocore6,libqt6concurrent6,libqt6core6t64,libqt6dbus6,libqt6gui6,libqt6positioning6,libqt6qml6,libqt6quick6,kio-extras,libkexiv2qt6-0,mauikit (>= 4.0.5),mauikit-filebrowsing (>= 4.0.5),mauikit-imagetools (>= 4.0.5),qml6-module-qtcore,qml6-module-qtlocation,qml6-module-qtquick-effects
 Description: pix
  pix
 CONTROL
